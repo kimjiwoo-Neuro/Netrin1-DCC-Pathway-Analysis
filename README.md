@@ -36,7 +36,7 @@ This is a living hypothesis, subject to constant revision based on literature an
 **Initial Draft: 단순히 DCC가 물리적, 화학적 스트레스를 받아 독성 단백질이 쌓이는 것으로 해석했음.**
 **Revision: Netrin-1이 대사적 스트레스에 의해 분리되고 DCC가 자살 스위치를 킴. DCC의 파편이 주변 신경세포에 염증 반응을 유발시킴을 인지. 이에 따라 가설을 [Netrin-1의 분리는 독성단백질 제거를 방해하여 치매를 유발한다]는 쪽으로 정교화함.( 이 과정에서 미세아교세포(Microglia)의 청소 기능 저하라는 새로운 변수 추가 고려)**
 
-—--
+---
 
 ## 4. Therapeutic Strategies / 치료 전략
 Current research focuses on three major approaches to intercept this cascade:
