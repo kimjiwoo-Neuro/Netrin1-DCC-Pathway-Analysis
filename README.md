@@ -76,4 +76,23 @@ Current research focuses on three major approaches to intercept this cascade:
 
 ---
 
+### 7. Cellular Dynamics: The Chain Reaction of Neurodegeneration
+
+본 섹션에서는 단일 뉴런의 사멸이 어떻게 조직 전체의 염증과 질환으로 확산되는지 기술합니다.
+
+#### **Step 1: [시작] 뉴런의 1차 피해 (Internal Demolition)**
+* **자살 스위치 가동:** 뇌혈류 장애로 Netrin-1이 결핍되면 DCC 수용체 내부의 Caspase-3(분자 믹서기)가 활성화됩니다.
+* **회로 단절:** 믹서기가 세포 내부의 골격을 파괴하면서 시냅스 연결이 먼저 끊깁니다. 이는 질환 초기 단계에서 발생하는 **기억력 감퇴의 물리적 실체**입니다.
+
+#### **Step 2: [절정] 미세아교세포의 임계점 도달 (Microglial Overload)**
+* **청소부의 한계:** 급격한 뉴런 사멸로 발생한 다량의 세포 파편은 미세아교세포(Microglia)의 처리 능력을 초과합니다.
+* **독성 환경 조성:** 치워지지 못한 파편들이 뇌 내 독성 단백질로 작용하며, 이 시점에서 병의 양상(치매 또는 루게릭)이 결정됩니다.
+
+#### **Step 3: [결말] 면역 폭주와 병적 악순환 (The Vicious Cycle)**
+* **염증성 사이토카인 방출:** 과부하가 걸린 미세아교세포는 주변에 염증 물질(Cytokine)을 내뿜으며 공격적인 상태로 변합니다.
+* **악순환의 반복:** 이 염증 물질이 주변의 건강한 뉴런들을 자극하여 또 다른 DCC 자살 스위치를 켜게 만듭니다. 이로써 **멈추지 않는 퇴행의 고리**가 완성됩니다.
+
+
+---
+
 Status:Ongoing(Active Research) l Last Updated: 2026-04-29
