@@ -1,0 +1,65 @@
+# Project: Bio-Physical Thresholds of DCC Cleavage and Neural System Collapse
+## (알코올에 의한 DCC 절단 및 신경계 붕괴의 생물물리학적 임계점 설정 연구)
+
+## 1. Overview (개요)
+This research aims to define the causal relationship between biophysical changes in cerebral blood flow (Shear Stress) and molecular biological mechanisms (DCC Protein Cleavage) during alcohol consumption. 
+(본 연구는 알코올 섭취 시 발생하는 뇌혈류의 물리적 변화인 전단 응력과 분자 생물학적 기전인 DCC 단백질 절단 사이의 인과관계를 규명하는 데 목적이 있다.)
+
+## 2. Hypothesis: "Headache as a Post-Damage Signal" (가설: 결과로서의 두통)
+- **Core Hypothesis (핵심 가설)**: Headaches are not an early warning sign, but a "Post-damage Signal" indicating that the system's structural integrity (DCC-Netrin connection) has already begun to collapse.
+(두통은 단순한 경보가 아니라, 시스템의 구조적 결합인 DCC-Netrin 연결이 이미 무너지기 시작했다는 '사후 손상 신호'이다.)
+- **Mechanism (기전)**: Ethanol-induced vasodilation → Rapid increase in cerebral blood flow → Generation of Shear Stress ($\tau$) → Activation of membrane proteases → Cleavage of DCC ectodomain → Dissociation of Netrin-1 and AQP4 → Triggering of Apoptosis (Cell Suicide).
+(에탄올에 의한 혈관 이완 → 뇌혈류 급증 → 전단 응력 발생 → 절단효소 활성화 → DCC 외도메인 절단 → Netrin-1 및 아쿠아포린4 해리 → 세포 사멸 스위치 가동.)
+
+## 3. Dual-Threshold Strategy (이원화 임계점 설계)
+To ensure logical integrity, the model utilizes a dual-threshold structure for input and physical triggers.
+(논리적 무결성을 위해 입력값과 물리적 트리거를 이원화하여 관리한다.)
+
+### 3.1. Input Threshold: Statistical Reference (제1 임계점: 통계적 기준)
+- **BAC 0.08%**: Established as a universal statistical baseline where systemic changes become significant.
+(시스템 변화가 유의미해지는 보편적 통계 지표로서 BAC 0.08%를 설정함.)
+
+### 3.2. Mechanical Threshold: Physical Trigger (제2 임계점: 물리적 기준)
+- **Critical Shear Stress ($\tau$)**: The actual physical trigger based on flow velocity ($v$) and vascular resistance.
+(혈류 속도와 혈관 저항에 근거한 실질적 물리 파괴 트리거인 임계 전단 응력을 설정함.)
+- Especially for patients with pre-existing cerebral blood flow disorders (e.g., Patient A), this threshold can be reached at much lower BAC levels.
+(특히 뇌혈류 장애가 있는 환자 A의 경우, 훨씬 낮은 알코올 농도에서도 이 임계점에 조기 도달할 수 있음.)
+
+## 4. Environmental Weight: Inflammation Index (환경 가중치: 염증 지수)
+Neuro-specific cytokine levels serve as a sensitivity weight for the model.
+(뇌 특화 염증 수치인 사이토카인을 모델의 민감도 가중치로 설정한다.)
+- **Critical Point (임계점)**: 3.00 mg/L (hs-CRP equivalent) is defined as the point of definitive system collapse.
+(CRP 기준 3.00 mg/L를 시스템 붕괴 확정점으로 정의함.)
+- Higher inflammation levels lower the energy barrier required for DCC cleavage.
+(염증 수치가 높을수록 DCC 절단에 필요한 에너지 장벽이 낮아지는 모델링을 적용함.)
+
+## 5. Future Work: In-silico Simulation (향후 과제: 시뮬레이션)
+- **Tool**: Python (NumPy, SciPy, Matplotlib)
+- **Objective**: Visualize the discontinuity points of DCC cleavage relative to alcohol concentration and inflammation levels.
+(알코올 농도 및 염증 지수에 따른 DCC 절단 확률의 불연속점을 시뮬레이션으로 시각화할 예정.)
+
+---
+
+## 🚀 Phase 2: In-silico Verification Plan (인실리코 증명 및 시뮬레이션 계획)
+*이 섹션은 정립된 가설을 파이썬(Python) 수치 모델링으로 증명하기 위한 실행 로드맵입니다.*
+
+### 1. Mathematical Objective (수학적 목표)
+- **Causal Quantification**: 단순한 현상 관찰을 넘어, BAC와 전단 응력($\tau$)이 DCC 결합 에너지를 압도하는 임계 지점을 수식화함.
+- **Discontinuity Analysis**: 시스템이 비가역적으로 붕괴하는 '불연속 지점'을 데이터로 시각화하여 "두통은 결과다"라는 명제를 입증함.
+
+### 2. Simulation Logic & Variables (시뮬레이션 로직 및 변수)
+| Category | Variable | Description |
+| :--- | :--- | :--- |
+| **Independent (입력)** | `BAC`, `Inflammation_Index` | 알코올 농도(0.00~0.20) 및 염증 수치(CRP 기준) |
+| **Mediator (매개)** | `Shear_Stress ($\tau$)` | 혈류 속도 및 혈관 저항에 따른 물리적 부하 계산 |
+| **Dependent (결과)** | `DCC_Cleavage_Prob` | DCC 절단 확률 및 아쿠아포린4 해리 지수 |
+
+### 3. Step-by-Step Implementation (단계별 구현 계획)
+1. **[Step 1] Base Model**: NumPy를 활용하여 정상 상태의 DCC-Netrin 결합 에너지 모델 구축.
+2. **[Step 2] Stress Mapping**: 알코올 섭취량에 따른 혈류량 급증 시나리오를 전단 응력 함수로 치환.
+3. **[Step 3] Sensitivity Test**: 염증 수치(3.00 mg/L)를 가중치로 두어, 환자 A와 같은 취약군에서 임계점이 얼마나 조기에 붕괴하는지 분석.
+4. **[Step 4] Visualization**: Matplotlib을 통해 'Safety Zone'과 'Crash Zone'이 나뉘는 3D Surface Plot 생성.
+
+### 4. Technical Stack (사용 도구)
+- **Language**: Python 3.x
+- **Libraries**: `NumPy` (수치 계산), `SciPy` (임계값 최적화), `Matplotlib/Seaborn` (데이터 시각화)
