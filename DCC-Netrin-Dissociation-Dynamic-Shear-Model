@@ -1,0 +1,39 @@
+# Research Log: DCC-Netrin-1 Dissociation Mechanism
+## Dynamic Shear Deformation Model (동적 전단 변형 모델)
+
+### [Figure 1. Architectural Design of DCC-Netrin-1 Dissociation]
+
+*   **Spatial Context (공간적 맥락)**: 슈반 세포(Schwann cell)와 뇌혈관의 인접성. 혈류 속도($v$) 변화가 DCC 구조에 직접적으로 압박을 가하는 기하학적 구조. / Proximity between Schwann cells and cerebral blood vessels. A geometric structure where changes in blood flow velocity ($v$) exert direct pressure on the DCC protein.
+*   **Mathematical Candidates (수리적 후보군)**: 유체 압력이 단백질 내부의 전단 응력($\tau$)으로 변환되는 메커니즘을 정의하기 위한 라플라스 법칙 및 나비에-스토크스 방정식 응용. / Application of Laplace's Law and Navier-Stokes equations to define the conversion of fluid pressure into internal shear stress ($\tau$).
+*   **Target Objective (핵심 목표)**: FN4와 FN5 사이의 결합이 해리되는 임계점을 찾는 것이 본 모델링의 최종 목적. / The ultimate goal is to identify the critical threshold where the bond between FN4 and FN5 dissociates.
+
+---
+
+## 1. Core Analogy (핵심 비유)
+*   **Physical Context (물리적 상황)**: 좁은 틀 안에 계란(DCC 단백질)과 축구공(혈류 압력)을 함께 넣은 상황. / Placing an "egg" (DCC protein) and a "soccer ball" (blood flow pressure) inside a narrow frame.
+*   **Key Principle (핵심 원리)**: 축구공의 팽창이 가로 방향의 압착력을 발생시키고, 이 힘은 비압축성 재료인 단백질 내부에서 **세로 방향의 인장과 내부 구조의 일그러짐**으로 전환됨. / Expansion of the soccer ball generates horizontal compression, which is converted into **longitudinal tension and structural distortion** within the incompressible protein material.
+
+## 2. Key Physical Variables (주요 물리적 변수)
+### 2-1. Young’s Modulus ($E$) & Structural Resistance (영률과 구조적 저항)
+*   **Definition (정의)**: 단백질이 외부 응력에 저항하며 구조적 일체성을 유지하려는 힘. / The capacity of the protein to resist external stress and maintain structural integrity.
+*   **Mechanism (메커니즘)**: 변형 에너지(Strain energy)가 단백질 구조 내부에 축적되다가 임계점에 도달함. / Accumulation of strain energy within the protein structure until it reaches a critical threshold.
+*   **Note (비고)**: 현재 모델은 점탄성 특성을 단순화하여 정적 탄성체로 가정함. / Current model simplifies viscoelastic properties by assuming a static elastic body.
+
+### 2-2. Internal Shear Deformation (내부 전단 변형)
+*   **Improvement (수정사항)**: 단순 인장 모델의 한계를 극복하기 위해 전단 응력 개념 추가. / Incorporation of shear stress to overcome the limitations of simple tension models.
+*   **Mechanism (메커니즘)**: 가로 압착 발생 시 아미노산 사슬들이 서로 미끄러짐(전단). 이 미끄러짐이 DCC-Netrin-1 결합면을 직접 밀어내어 해리 확률을 높임. / Horizontal compression causes amino acid chains to slide (shear), directly pushing the DCC/Netrin-1 interface and increasing dissociation probability.
+
+## 3. Data Matching Logic (데이터 매칭 로직)
+*   **Unsteady Flow (비정상 유동)**: 뇌혈류는 실시간으로 변화함. / Cerebral blood flow is non-steady and fluctuates in real-time.
+*   **Stagnation Point (정체 지점)**: 혈류가 벽면에 부딪혀 속도가 0이 되는 지점에서 운동 에너지가 최대 압력 에너지로 전환됨. / At points where velocity becomes zero (impact with walls), kinetic energy is converted into maximum pressure energy.
+*   **Energy Trapping (에너지 트래핑)**: 국소 와류 내에서 에너지가 가두어지며 특정 벽면에 응력을 집중시킴. / Energy is confined within local vortex structures, concentrating stress on specific surfaces.
+*   **Critical Threshold (임계점 도달)**: 집중된 전단 응력이 단백질의 영률과 충돌하여 구조적 일그러짐을 유발. / Concentrated shear stress exceeds the protein's Young's modulus, triggering structural failure.
+
+## 4. Adversarial Simulation (학술적 방어 / 적대적 시뮬레이션)
+1.  **Bernoulli Paradox Rebuttal (베르누이 역설 반박)**: 본 가설은 정상 상태가 아닌 비정상 유동 및 정체 지점에서의 국소적 압력 상승에 집중함. / Focuses on unsteady flow and localized pressure surges at stagnation points, rather than steady-state Bernoulli assumptions.
+2.  **Accumulation & Relaxation (누적 효과와 완화 시간)**: 자가 회복 시간보다 충격 주기가 더 빠를 때 변형이 누적됨. / Deformation accumulates when the impact frequency exceeds the protein's self-recovery (relaxation) time.
+3.  **Energy Landscape Distortion (자유 에너지 지형 변형)**: 반복적인 전단 변형이 결합 장벽을 낮추어 에너지 지형 자체를 해리에 유리한 방향으로 기울게 함. / Repeated shear deformation lowers the potential barrier, tilting the energy landscape toward a dissociation-favored state (structural fatigue).
+
+---
+**Author**: [Kim ji woo]
+**Date**: 2026-05-06
